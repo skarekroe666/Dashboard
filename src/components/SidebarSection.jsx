@@ -20,7 +20,7 @@ const SidebarSection = () => {
             className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 
         ${isSidebarOpen ? 'w-64' : 'w-20'}`}
             animate={{ width: isSidebarOpen ? 256 : 80 }}>
-            <div className='h-full bg-zinc-200 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-zinc-300'>
+            <div className='h-full bg-zinc-100 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-zinc-300'>
                 <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

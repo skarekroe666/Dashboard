@@ -1,5 +1,7 @@
 import Header from '@/components/common/Header'
 import StatCard from '@/components/common/StatCard'
+import CategoryChart from '@/components/overview/CategoryChart'
+import SalesChannelChart from '@/components/overview/SalesChannelChart'
 import SalesOverviewChart from '@/components/overview/SalesOverviewChart'
 import { BarChart2, ShoppingBag, Users, Zap } from 'lucide-react'
 import React from 'react'
@@ -21,6 +23,8 @@ const Homepage = () => {
         {/* charts */}
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
           <SalesOverviewChart/>
+          <CategoryChart/>
+          <SalesChannelChart/>
         </div>
       </main>
     </div>

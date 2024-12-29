@@ -19,7 +19,7 @@ const SalesOverviewChart = () => {
     ]
 
     return (
-        <div className='bg-zinc-100 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-zinc-300'>
+        <div className='bg-zinc-50 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-zinc-300'>
             <h2 className='text-lg font-medium mb-4 text-zinc-700'>Sales Overview</h2>
 
             <div className='h-80'>
