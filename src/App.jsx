@@ -5,6 +5,7 @@ import SidebarSection from "./components/SidebarSection"
 import Users from "./Pages/Users"
 import SalesPage from "./Pages/SalesPage"
 import Orders from "./Pages/Orders"
+import Settings from "./Pages/Settings"
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/users" element={<Users />} />
         <Route path="/sales" element={<SalesPage />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </div>
   )

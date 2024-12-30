@@ -67,10 +67,11 @@ const OrdersTable = () => {
                             <TableCell>
                                 <Badge variant={
                                     order.status === "Delivered"
-                                        ? "secondary"
+                                        ? "default"
                                         : order.status === "Pending"
                                             ? "destructive"
-                                            : "default"}>
+                                            : order.status === "Processing" 
+                                            ? "outline" : "secondary"}>
                                     {order.status}
                                 </Badge>
                             </TableCell>
