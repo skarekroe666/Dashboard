@@ -3,6 +3,8 @@ import Homepage from "./Pages/Homepage"
 import Products from "./Pages/Products"
 import SidebarSection from "./components/SidebarSection"
 import Users from "./Pages/Users"
+import SalesPage from "./Pages/SalesPage"
+import Orders from "./Pages/Orders"
 
 
 const App = () => {
@@ -16,11 +18,13 @@ const App = () => {
       </div>
 
       {/* content */}
-      <SidebarSection/>
+      <SidebarSection />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/products" element={<Products />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/sales" element={<SalesPage />} />
+        <Route path="/orders" element={<Orders />} />
       </Routes>
     </div>
   )

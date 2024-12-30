@@ -11,7 +11,6 @@ const SidebarSection = () => {
         { name: "Users", icon: Users, href: "/users" },
         { name: "Sales", icon: DollarSign, href: "/sales" },
         { name: "Orders", icon: ShoppingCart, href: "/orders" },
-        { name: "Analytics", icon: TrendingUp, href: "/analytics" },
         { name: "Settings", icon: Settings, href: "/settings" }
     ]
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
