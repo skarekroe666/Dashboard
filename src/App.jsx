@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router"
 import Homepage from "./Pages/Homepage"
 import Products from "./Pages/Products"
 import SidebarSection from "./components/SidebarSection"
+import Users from "./Pages/Users"
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/users" element={<Users />} />
       </Routes>
     </div>
   )
