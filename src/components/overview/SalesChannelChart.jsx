@@ -28,7 +28,7 @@ const SalesChannelChart = () => {
                             itemStyle={{ color: "#303030" }} />
                         <Bar dataKey={"value"} fill='#303030'>
                             {SALES_CHANNEL_DATA.map((entry, index) => (
-                                <Cell key={`cell-${index}`}/>
+                                <Cell key={`cell-${index}`} />
                             ))}
                         </Bar>
                     </BarChart>

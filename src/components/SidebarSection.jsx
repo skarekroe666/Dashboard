@@ -1,4 +1,4 @@
-import { BarChart2, DollarSign, Menu, Settings, ShoppingCart, TrendingUp, Users } from 'lucide-react'
+import { BarChart2, DollarSign, Menu, Package, Settings, ShoppingCart, TrendingUp, Users } from 'lucide-react'
 import React, { useState } from 'react'
 import { AnimatePresence, delay, motion } from 'framer-motion'
 import { Link } from 'react-router'
@@ -7,6 +7,7 @@ const SidebarSection = () => {
 
     const SIDEBAR_ITEMS = [
         { name: "Overview", icon: BarChart2, href: "/" },
+        { name: "Products", icon: Package, href: "/products" },
         { name: "Users", icon: Users, href: "/users" },
         { name: "Sales", icon: DollarSign, href: "/sales" },
         { name: "Orders", icon: ShoppingCart, href: "/orders" },
