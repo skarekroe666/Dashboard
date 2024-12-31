@@ -2,6 +2,7 @@ import { BarChart2, DollarSign, Menu, Package, Settings, ShoppingCart, TrendingU
 import React, { useState } from 'react'
 import { AnimatePresence, delay, motion } from 'framer-motion'
 import { Link } from 'react-router'
+import { Button } from "@/components/ui/button"
 
 const SidebarSection = () => {
 
@@ -14,7 +15,7 @@ const SidebarSection = () => {
         { name: "Settings", icon: Settings, href: "/settings" }
     ]
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-    
+
     return (
         <motion.div
             className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 
@@ -37,19 +38,25 @@ const SidebarSection = () => {
                                 <item.icon className='text-zinc-700' size={20} style={{ minWidth: "20px" }} />
                                 <AnimatePresence>
                                     {isSidebarOpen && (
-                                        <motion.spin className='ml-4 whitespace-nowrap'
+                                        <motion.span
+                                            className='ml-4 whitespace-nowrap'
                                             initial={{ opacity: 0, width: 0 }}
                                             animate={{ opacity: 1, width: "auto" }}
                                             exit={{ opacity: 0, width: 0 }}
                                             transition={{ duration: 0.2, delay: 0.3 }}>
                                             {item.name}
-                                        </motion.spin>
+                                        </motion.span>
                                     )}
                                 </AnimatePresence>
                             </motion.div>
                         </Link>
                     ))}
                 </nav>
+                {isSidebarOpen && (
+                    <Button variant="default">
+                        Log out
+                    </Button>
+                )}
             </div>
         </motion.div>
     )
